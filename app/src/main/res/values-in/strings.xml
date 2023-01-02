@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Submission Story App</string>
+    <string name="login">Masuk</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="email_error">Masukan alamat email yang valid</string>
+    <string name="login_picture">Gambar login</string>
+    <string name="description">Deskripsi</string>
+    <string name="story_image">Foto Cerita</string>
+    <string name="register">Daftar</string>
+    <string name="name">Nama</string>
+    <string name="ask_account">Belum memiliki akun?</string>
+    <string name="createdat">Dibuat pada</string>
+    <string name="description_content">Deskripsi Konten</string>
+    <string name="new_image_story">Foto Cerita Baru</string>
+    <string name="galeri">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="upload">Unggah</string>
+    <string name="add_description">Tambah Deskripsi</string>
+    <string name="empty_login_form">Alamat email dan password masih kosong</string>
+    <string name="add_story_button">Tombol Tambah cerita</string>
+    <string name="language">Bahasa</string>
+    <string name="log_out">Keluar</string>
+    <string name="success_logout">Berhasil Keluar</string>
+    <string name="password_less_than_6">Password harus setidaknya terdapat 6 karakter</string>
+    <string name="have_account">Sudah memiliki akun?</string>
+    <string name="fields_empty_msg">Semua kolom harus diisi</string>
+    <string name="detail_story">Detail Cerita</string>
+    <string name="home">Beranda</string>
+    <string name="add_story">Tambah Cerita</string>
+    <string name="title_activity_maps">Peta Cerita</string>
+    <string name="story_maps">Peta Cerita</string>
+    <string name="retry">Coba Lagi</string>
+</resources>

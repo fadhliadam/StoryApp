@@ -1,0 +1,46 @@
+Skenario Testing
+
+Unit Test
+
+Class RegisterViewModelTest
+
+1. when Register should not error and return register result
+- Memastikan bahwa actualResponse merupakan Result.Success adalah true
+- Memastikan data actualResponse tidak null
+
+2. when Network Error Should Return Error
+- Memastikan bahwa actualResponse merupakan Result.Error adalah true
+- Memastikan data actualResponse tidak null
+
+
+Class LoginViewModelTest
+
+1. when Login should not error and return login result
+- Memastikan bahwa actualResponse merupakan Result.Success adalah true
+- Memastikan data actualResponse loginResult sama dengan data Expected loginResult
+- Memastikan data actualResponse tidak null
+
+2. when Network Error Should Return Error
+- Memastikan bahwa actualResponse merupakan Result.Error adalah true
+- Memastikan data actualResponse tidak null
+
+Class StoryViewModelTest
+
+1. when Get All Stories with Location Should Not Null and Return Stories Result
+- Memastikan actualResponse dan Result.Success sama,
+- Memastikan data actualResponse tidak null
+- Memastikan jumlah data asli(actualRespone) sesuai dengan jumlah data dummyStory
+
+2. when Get all Stories Should Not Null
+- Memastikan data tidak null
+- Memastikan jumlah data sesuai dengan yang diharapkan
+
+3. when Get All Stories With Location Network Error Should Return Error
+- Memastikan bahwa actualResponse merupakan Result.Error adalah true
+- Memastikan data actualResponse tidak null
+
+
+Class AddStoryViewModelTest
+
+when Add Story should not error
+- Memastikan upload story berhasil melalui viewmodel dan mengembalikan Result.Success

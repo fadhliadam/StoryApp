@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.register.RegisterFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image_register"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/vector_register"
+            android:contentDescription="@string/login_picture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/edit_text_nama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="36dp"
+            android:autofillHints="Enter your name"
+            android:background="@drawable/text_container"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="10dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_register" />
+
+        <com.adam.submissionstoryapp.ui.costumview.EditTextEmail
+            android:id="@+id/edit_text_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/email"
+            android:minHeight="48dp"
+            android:paddingHorizontal="14dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_nama" />
+
+        <com.adam.submissionstoryapp.ui.costumview.EditTextPassword
+            android:id="@+id/edit_text_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="24dp"
+            android:hint="@string/password"
+            android:minHeight="48dp"
+            android:paddingHorizontal="14dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="@id/edit_text_email"
+            app:layout_constraintStart_toStartOf="@id/edit_text_email"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_email" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="24dp"
+            android:text="@string/register"
+            android:enabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_password"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_password"
+            app:layout_constraintEnd_toEndOf="@id/edit_text_password"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_account"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintEnd_toEndOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="@+id/btn_login" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:shadowRadius="0"
+            android:text="@string/login"
+            android:textColor="?colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="70dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorOnPrimary"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
